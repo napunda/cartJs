@@ -50,6 +50,12 @@
   .send-order .total {
     font-size: 18px !important;
   }
+  .products-card {
+    padding: 0 !important;
+  }
+  .products-card-description {
+    padding: 12px;
+  }
 }
 .products-card img {
   background: #ea1d2c;

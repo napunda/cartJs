@@ -4,7 +4,7 @@ let cart = [];
 let productosSelect = [];
 
 products.forEach(({ id, title, description, weight, price, img }) => {
-  const productHtml = `<div class=products-card>
+  const productHtml = `
 <div class="products-card-description">
    <h2>${title}</h2>
     <span class="description">${description}</span>
@@ -13,9 +13,10 @@ products.forEach(({ id, title, description, weight, price, img }) => {
     <button data-idProduct="${id}" class="addCartButton">Adicionar</button>
 </div>
 ${img ? `<img src="${img}" alt="${title}">` : ``}
-</div>`;
+`;
   const container = document.querySelector(".products-container");
   const product = document.createElement("div");
+  product.classList.add("products-card");
   product.innerHTML = productHtml;
   container.appendChild(product);
 });
