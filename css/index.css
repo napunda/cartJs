@@ -24,7 +24,8 @@
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    margin: auto;
+    margin: auto !important;
+    padding: 0;
   }
 }
 .products-card {
